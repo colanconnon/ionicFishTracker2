@@ -1,0 +1,22 @@
+<ion-navbar *navbar>
+    <!--<button clear>
+      <ion-icon name="arrow-back"></ion-icon> Back
+    </button>-->
+  <ion-title>Fish Catch Info</ion-title>
+   <ion-buttons end>
+   <button (click)="newFishCatch()" royal tappable>
+      <ion-icon name="add"></ion-icon>
+    </button>
+   </ion-buttons>
+</ion-navbar>
+<ion-content class="page2">
+<ion-list>
+  <ion-item *ngFor="#item of items" (click)="onFishCatchSelected(item)" tappable>
+       <h2>{{item.title}}</h2>
+    <p>Hayao Miyazaki • 1988</p>
+    <button clear item-right><ion-icon name="arrow-forward"> </ion-icon></button>
+
+  </ion-item>
+</ion-list>
+
+</ion-content>
