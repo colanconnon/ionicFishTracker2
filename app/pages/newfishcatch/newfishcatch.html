@@ -9,24 +9,34 @@
 <ion-content class="page2">
     <ion-list no-lines>
 
+   <ion-item>
+    <label> Latitude </label> <br />
+    <select class="form-control" type="text" >
+        <option> test </option>
+    </select>
+  </ion-item>
   <ion-item>
     <label> Latitude </label> <br />
     <input class="form-control" type="text" />
   </ion-item>
 
   <ion-item>
-    <label> Latitude </label> <br />
+    <label> Longitude </label> <br />
     <input class="form-control" type="text" />
   </ion-item> 
   <ion-item>
-    <label> Latitude </label> <br />
+    <label> Temperature </label> <br />
     <input class="form-control" type="text" />
   </ion-item> 
   <ion-item>
-    <label> Latitude </label> <br />
-    <input class="form-control" type="text" />
+    <label> Details </label> <br />
+    <textarea class="form-control" style="height:88px;"> </textarea>
   </ion-item>
 
 </ion-list>
+<ion-row>
+  <ion-col offset-10 ><button (click)="Submit()" style="width: 85%" round>Submit</button></ion-col>
+</ion-row>
+
 
 </ion-content>
