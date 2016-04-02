@@ -20,14 +20,19 @@ export class LoginPage {
   Login() {
     this.loginService.Login(this.username, this.password).subscribe(x => {
         console.log(x);
+        if(x.token){
+            this.nav.push(TabsPage);
+        }
+        else {
+            let alert = Alert.create({
+                title: 'Alert',
+                subTitle: 'Invalid Login information, please try again',
+                buttons: ['OK']
+            });
+            this.nav.present(alert);
+        }
     });
-    let alert = Alert.create({
-      title: 'Alert',
-      subTitle: 'Your login request has been recieved ' + this.username,
-      buttons: ['OK']
-    });
-    this.nav.present(alert);
-    this.nav.push(TabsPage);
+   
 
   }
 }
