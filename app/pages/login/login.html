@@ -1,14 +1,11 @@
-<ion-navbar *navbar>
-   
-  <ion-title>Login</ion-title>
-</ion-navbar>
 <ion-content class="page2">
+ <ion-col><h1 class="content" style="width: 100%; text-align: center;">Fishtracker Login</h1></ion-col>
 
 <ion-list no-lines>
 
   <ion-item>
        
-    <label> username </label> <br />
+    <label class="form-control-label"> Username </label> <br />
     <input [(ngModel)]="username" class="form-control" type="text" />
   </ion-item>
     
@@ -16,7 +13,7 @@
 
    <ion-item>
        
-    <label> Password </label> <br />
+    <label class="form-control-label"> Password </label> <br />
     <input [(ngModel)]="password" class="form-control" type="password" />
   </ion-item>
 

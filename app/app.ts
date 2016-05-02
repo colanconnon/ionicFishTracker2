@@ -10,7 +10,7 @@ import {LoginPage} from './pages/login/login';
   config: {} // http://ionicframework.com/docs/v2/api/config/Config/
 })
 export class MyApp {
-  rootPage: any = LoginPage;
+  rootPage: any = TabsPage;
 
   constructor(platform: Platform) {
     platform.ready().then(() => {
